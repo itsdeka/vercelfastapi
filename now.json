@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "public": false,
+    "builds": [{ "src": "app.py", "use": "@now/python" }],
+    "routes": [
+        { "src": "/", "dest": "app.py" },
+        { "src": "/example/(.*)", "dest": "app.py" }
+    ]
+}
